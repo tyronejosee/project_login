@@ -13,7 +13,7 @@
         <li><a href={% url 'products' %}>Productos</a></li>
 
         {% if request.user.is_authenticated %}
-            <li><a href="">Salir</a></li>
+            <li><a href={% url 'exit' %}>Salir</a></li>
         {% else %}
             <li><a href={% url 'login' %}>Ingresar</a></li>
         {% endif %}
