@@ -4,4 +4,9 @@
 
 <h3>Inicio</h3>
 
+{% if request.user.is_authenticated %}
+    <hr>
+    <h2>{{ user.username | upper }}, bienvenido nuevamente}</h2>
+{% endif %}
+
 {% endblock %}
