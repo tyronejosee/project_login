@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Aplicación</title>
 </head>
-<body>
+<body class="font-sans bg-gray-200">
     
-    <h2>Inicio</h2>
+    <h2 class="prose ">Inicio</h2>
     <ul>
         <li><a href={% url 'home' %}>Inicio</a></li>
         <li><a href={% url 'products' %}>Productos</a></li>
