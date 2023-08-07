@@ -6,17 +6,14 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Aplicación</title>
 </head>
-<body class="font-sans bg-gray-200">
-    
-    <h2 class="prose ">Inicio</h2>
-    <ul>
-        <li><a href={% url 'home' %}>Inicio</a></li>
-        <li><a href={% url 'products' %}>Productos</a></li>
-
+<body class="bg-zinc-900 font-mono text-white">
+    <ul class="flex flex-row flex justify-center text-center m-8">
+        <li class="bg-yellow-400 text-zinc-900 p-2 rounded-lg basis-1/4 mx-8"><a href={% url 'home' %}>Inicio</a></li>
+        <li class="bg-yellow-400 text-zinc-900 p-2 rounded-lg basis-1/4 text-center mx-8"><a href={% url 'products' %}>Productos</a></li>
         {% if request.user.is_authenticated %}
-            <li><a href={% url 'exit' %}>Salir</a></li>
+            <li class="bg-yellow-400 text-zinc-900 p-2 rounded-lg basis-1/4 text-center mx-8"><a href={% url 'exit' %}>Salir</a></li>
         {% else %}
-            <li><a href={% url 'login' %}>Ingresar</a></li>
+            <li class="bg-yellow-400 text-zinc-900 p-2 rounded-lg basis-1/4 text-center mx-8"><a href={% url 'login' %}>Ingresar</a></li>
         {% endif %}
     </ul>
 
