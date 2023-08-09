@@ -2,7 +2,42 @@
 
 {% block content %}
 
-<h3>Inicio</h3>
+<div class="grid grid-rows-3 grid-flow-col gap-4">
+    <a href="#" class="group block my-8 max-w-xs mx-auto rounded-lg p-6 bg-gray-50 ring-1 ring-slate-900/5 shadow-lg space-y-3 hover:bg-sky-500 hover:ring-sky-500">
+        <div class="flex items-center space-x-3">
+          <svg class="h-6 w-6 stroke-sky-500 group-hover:stroke-white" fill="none" viewBox="0 0 24 24"><!-- ... --></svg>
+          <h2 class="text-slate-900 group-hover:text-white text-sm font-semibold">Tarjeta de Presentación</h2>
+        </div>
+        <p class="text-gray-500 group-hover:text-white text-sm">Ejemplo de subtitulo de mi tarjeta de presentación.</p>
+    </a>
+    <a href="#" class="group block my-8 max-w-xs mx-auto rounded-lg p-6 bg-gray-50 ring-1 ring-slate-900/5 shadow-lg space-y-3 hover:bg-sky-500 hover:ring-sky-500">
+        <div class="flex items-center space-x-3">
+          <svg class="h-6 w-6 stroke-sky-500 group-hover:stroke-white" fill="none" viewBox="0 0 24 24"><!-- ... --></svg>
+          <h2 class="text-slate-900 group-hover:text-white text-sm font-semibold">Tarjeta de Presentación</h2>
+        </div>
+        <p class="text-gray-500 group-hover:text-white text-sm">Ejemplo de subtitulo de mi tarjeta de presentación.</p>
+    </a>
+    <a href="#" class="group block my-8 max-w-xs mx-auto rounded-lg p-6 bg-gray-50 ring-1 ring-slate-900/5 shadow-lg space-y-3 hover:bg-sky-500 hover:ring-sky-500">
+        <div class="flex items-center space-x-3">
+          <svg class="h-6 w-6 stroke-sky-500 group-hover:stroke-white" fill="none" viewBox="0 0 24 24"><!-- ... --></svg>
+          <h2 class="text-slate-900 group-hover:text-white text-sm font-semibold">Tarjeta de Presentación</h2>
+        </div>
+        <p class="text-gray-500 group-hover:text-white text-sm">Ejemplo de subtitulo de mi tarjeta de presentación.</p>
+    </a>
+
+    <div class="max-w-md mx-auto bg-white hover:ring-sky-500 rounded-xl shadow-md overflow-hidden md:max-w-2xl">
+        <div class="md:flex">
+          <div class="md:shrink-0">
+            <img class="h-48 w-full object-cover md:h-full md:w-48" src="/img/building.jpg" alt="Modern building architecture">
+          </div>
+          <div class="p-8">
+            <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">Company retreats</div>
+            <a href="#" class="block mt-1 text-lg leading-tight font-medium text-black hover:underline">Incredible accommodation for your team</a>
+            <p class="mt-2 text-slate-500">Looking to take your team away on a retreat to enjoy awesome food and take in some sunshine? We have a list of places to do just that.</p>
+          </div>
+        </div>
+    </div>
+</div>
 
 {% if request.user.is_authenticated %}
     <hr>
